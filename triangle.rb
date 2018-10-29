@@ -15,6 +15,9 @@
 #
 def triangle(a, b, c)
   # WRITE THIS CODE
+  raise TriangleError if a<=0 or b<=0 or c<=0
+  raise TriangleError if a+b<=c or b+c<=a or a+c<=b
+
   iguales = 0
   if a == b
      iguales += 1
