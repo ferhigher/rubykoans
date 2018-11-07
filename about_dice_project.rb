@@ -9,7 +9,7 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
     for i in 1..tiradas
       @values.push(1+rand(6))
     end
-    #puts values.to_s
+    #puts values.to_s 
   end
  end
 
