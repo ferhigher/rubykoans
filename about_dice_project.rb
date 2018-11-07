@@ -3,19 +3,13 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # Implement a DiceSet Class here:
 
  class DiceSet
-#   code ...
   attr_reader :values
   def roll tiradas
-    #return [1,1,1,5,1]
     @values = []
     for i in 1..tiradas
       @values.push(1+rand(6))
     end
-
-    puts values.to_s
-    # for i |6|
-    #   random(i)
-    #   arr[i]=
+    #puts values.to_s
   end
  end
 
