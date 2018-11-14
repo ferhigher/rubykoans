@@ -30,7 +30,7 @@ class Proxy
   # WRITE CODE HERE
 
   def method_missing(method_name, *args, &block)
-    puts "Someone called #{method_name} with <#{args.join(", ")}>"
+    #puts "Someone called #{method_name} with <#{args.join(", ")}>"
     @messages << method_name
     @object.send(method_name, *args)
     #puts @messages
